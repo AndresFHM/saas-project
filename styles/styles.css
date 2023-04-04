@@ -1,0 +1,742 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family:  sans-serif;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 600;
+    margin:5px 20px;
+}
+.navbar img{width: 16%;}
+.navbar-links, .navbar-tablet-links,
+.navbar-mobile-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.navbar-links a, .navbar-tablet-links a,
+.navbar-mobile-links a{
+    text-decoration: none;
+    color: rgb(131, 128, 128);
+    margin: 0 10px;
+}
+.navbar-links a:hover,
+.navbar-tablet-links a:hover,
+.navbar-mobile-links a:hover{color: #3F7DE0;}
+.navbar-links> .buy-button, .play-button,
+.navbar-tablet>.buy-button,
+.navbar-mobile>.buy-button,
+.mobile-button>.buy-button,
+.get-started{
+    background-color: #3F7DE0;
+    color: white;
+    border-radius: 30px;
+    border: none;
+    font-family:  sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    height: 50px;
+    width: 110px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.navbar> .hamburger-menu, .hero-left> h5,
+.benefits-card p, .benefits-header h5{color: rgb(131, 128, 128);}
+.navbar-tablet, .navbar-mobile{
+    border-top: solid 1px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+.navbar-tablet, .navbar-mobile{display: none;}
+
+.navbar-mobile-links{flex-direction: column;}
+.mobile-button>.buy-button{ 
+    padding:10px;
+    margin-left: 0;
+}
+.navbar-tablet>.navbar-tablet-links{
+    gap:15px;
+    padding: 50px;
+}
+.navbar-mobile>.navbar-mobile-links> a{
+    padding: 10px;
+}
+.navbar-mobile>.navbar-mobile-links{
+    padding: 10px;
+    margin-top:30px;
+}
+.hero-section{
+    display: flex;
+    font-family: sans-serif;
+    margin: 10px 20px;
+    gap: 100px; 
+}
+.hero-left{
+    padding-top: 0px;
+    margin-right: 230px;
+    margin-left: 0;
+    padding-left: 0;
+}
+.hero-left> h1{font-size: xx-large;}
+.play-button{margin-left: 0;}
+.play-button > .fa-play-circle{
+    color: white;
+    font-size: 14px;
+}
+.hero-button a, .benefits-card a {
+    text-decoration: none;
+    color: #3F7DE0;
+    font-weight: 600;
+    font-size: 12px;
+    margin-left: 15px;
+  }
+
+.hero-left h5{font-size: 12px;}
+.hero-right {
+    padding-top: 50px;
+    padding-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    position: relative;
+}
+.brand-icon{
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;   
+}
+.brand-icon, .benefits-card:hover, 
+.play-container, .price{
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
+}
+.google {
+    background-image: url("../saas-project-assets/logo_icons/google.png");
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 50px;
+    height: 50px;
+    background-size: 40px 40px;
+    transform: translate(-50%, -50%);
+    animation-name: google;
+}
+.atlassian{
+    background-image: url("../saas-project-assets/logo_icons/atlassian.png");
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 80px;
+    height:80px;
+    background-size: 50px 50px;
+    animation-name: atlassian;
+}
+.asana{
+    background-image: url("../saas-project-assets/logo_icons/asana.png");
+    grid-row: 1/2;
+    grid-column: 4/5;
+    width: 69px;
+    height:69px;
+    background-size: 45px 45px;
+    animation-name: asana;
+}
+.paypal{
+    background-image: url("../saas-project-assets/logo_icons/paypal.jpg");
+    grid-row: 3/4;
+    grid-column: 1/2;
+    width: 82px;
+    height:82px;
+    background-size: 45px 45px;
+    animation-name: paypal;
+}
+.weave{
+    background-image: url("../saas-project-assets/logo_icons/weave.png");
+    grid-row: 3/4;
+    grid-column: 3/4;
+    width: 70px;
+    height:70px;
+    background-size: 45px 45px;
+    animation-name: weave;
+}
+.google-a{
+    background-image: url("../saas-project-assets/logo_icons/google-a.png");
+    grid-row: 4/5;
+    grid-column: 2/3;
+    width: 40px;
+    height: 40px;
+    background-size: 35px 35px;
+    animation-name: google-a;
+}
+.calendar{
+    background-image: url("../saas-project-assets/logo_icons/calendar.png");
+    grid-row: 4/5;
+    grid-column: 4/5;
+    width: 70px;
+    height: 70px;
+    background-size: 40px 40px;
+    animation-name: calendar;
+}
+.benefits{
+    padding: 20px;
+}
+.benefits-card-container{
+    display: flex;
+    border-radius: 2px;
+    border: none;
+    gap: 15px;
+}
+.benefits-card{
+    width: 24%;
+    padding: 15px;
+    font-weight: 600;
+}
+.benefits-header{text-align: center;}
+.benefits-card img{width: 38px;}   
+.benefits-card a {margin-left: 0;}
+.benefits-card h5, .benefits-card p{
+    font-weight: 600;
+    font-size: 14px;
+}
+h5 >.sketch{
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(73, 180, 136);
+    margin-left: 5px;
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.pitch-section{
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    height: 311px;
+    background-color: rgb(247, 243, 243);
+    padding-top: 50px;    
+}
+.pitch-left, .pitch-right{width: 50%;}
+.pitch-left{
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.pitch-button> .play-button{
+    height: 35px;
+    font-size: 10px;
+    font-weight: 100;
+}
+.pitch-right{
+    background-image: url("../saas-project-assets/banners/banner_one.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+.why-section{padding-top: 30px;}
+.why-header{
+    text-align: center;
+    align-items: center;
+}
+.why-header> h5{
+    color: rgb(77, 76, 76);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 90px;
+    margin-bottom: 0;
+  }
+  
+  .circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #edf0f8;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }  
+  .circle .fa-circle {
+    position: absolute;
+    color: #3F7DE0;
+    top: 50%;
+    left: 50%;
+    font-size: 5px;
+    transform: translate(-50%, -50%);
+  }  
+  .circle p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }    
+  .line {
+    border-top: 1px solid #edf0f8;
+    width: 27%;
+    margin: 0;
+  }
+  .label-box{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 60px;
+  }
+.comp{
+    padding-left: 15px;
+}
+.play{
+    background-image: url("../saas-project-assets/banners/banner_two.jpg");
+    height: 500px;   
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* background-size: contain;  */
+    margin: 15px;    
+}
+.play-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    background-color: #edf0f8;
+    border-radius: 50%;
+    border: none;
+    height: 50px;
+    width: 50px;
+    text-align: center;  
+}
+.fa-play{
+    position: relative;
+    top: 17px;
+    left: 1px;
+}
+.christina{
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+    padding: 185px 20px 20px 20px;
+    padding-top: 185px;
+
+}
+.christina-left{
+    height: auto;
+    width: auto;
+}
+
+.christina-left-images{
+    width: 14cm;
+    height: 16cm;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.christina-left img:nth-child(1){
+    width: 50%;
+    height: auto;
+    display: block;
+}
+.christina-left img:nth-child(2){
+    width: 78.57%;
+    height: 81.25%;
+    position: absolute;
+    top: -13.43%;
+    left: 14.57%;
+}
+.christina-right{
+    font-weight: 600;
+    padding-left: 15px;
+}
+.christina-right h3{
+    font-size: 14px;
+    padding:0;
+    margin:0;
+    padding-top: 10px;
+}
+.christina-right h5{
+    font-size: 12px;
+    color:rgb(131, 128, 128); 
+    padding: 0;
+    margin: 0;
+}
+.christina-right img{
+    padding-top: 60px;
+    width: 60px;
+}
+.trusted{padding: 15px;}
+.trusted-header>h1{
+    color: gray;
+}
+.brand-box{
+    display: flex;
+    justify-content: space-between;
+}
+.world-best{width: 100px;}
+.pricing{padding: 5px 20px;}
+.pricing-header, .trusted-header{
+    text-align: center;
+}
+.pricing-features, .price-header{display: flex;}
+.price-header>h1{font-weight:bolder;}
+.price-header> h3{
+    padding-top:6px;
+    color: gray;
+}
+.price{
+    width: 50%;
+    padding: 30px 25px 0 25px;
+}
+.price h5{
+    font-size: 10px;
+    margin-top: 10px;
+}
+.price .play-button{
+    height: 40px;
+    margin-top: 20px;
+}
+.price hr{
+    border-top: solid 1px gray;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+.features{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+}
+.feature{
+    padding: 10px 20px; 
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.feature img{width: 25px;}
+.feature h5{margin-top: 10px;}
+
+.feature > p,
+.price > p{
+    font-weight: bold;
+    font-size: 12px;
+    color: gray;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+.blue{
+    background-image: url("../saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(19, 45, 100);
+    padding: 20px;
+    margin: 0;
+}
+.blue-container{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.hire-us-container{
+    border-bottom: solid 1px white;
+    width: 150px;
+    margin-bottom: 20px;
+}
+.hire-us-color{color: rgb(208, 215, 231);}
+.hire-us-container>h1{padding-top: 12px;}
+.hire-us-container>h5{display:inline-block;}
+.sub-text,.top-section>li>a, 
+.top-section>li>a:visited, .fa-location-arrow, .fa-phone,
+.fa-info-circle, .fa-user-circle, .fa-google,
+.fa-twitter, .fa-github, .fa-facebook, .footer-bottom>.left,
+.footer-bottom-bottom :first-child,
+.footer-bottom-bottom p:nth-child(2),
+.christina-right h5, .price-header> h3, .feature>p,
+.price > p, .price h5, .check-yes-text> h6 ,
+ .pricing-header h5, .price>hr, .fa-bars, .fa-times{
+    color: rgb(112, 123, 148);
+}
+.blue-left > .blue-left-right> h3{margin-bottom: 0;}
+.blue-left > .blue-left-right>h6{margin-top: 0;}
+.blue-left >.blue-left-right>.image-box{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 10px;
+}
+.quote-box{padding-right: 100px;}
+.profile-sm, .profile-lg{border-radius: 50%;}
+.profile-sm{
+    width: 30px;
+    height: 30px;
+}
+.profile-lg{width: 45px;}
+
+form{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 25px;
+}
+.input-grid input, #budget,
+.country-select{
+    margin-bottom: 15px;
+    height: 30px;
+    padding-left: 10px;
+}
+.input-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+.input-grid input, #budget,
+.country-select, #tell-us{
+    border: solid rgb(197, 193, 193) 1px;
+    border-radius: 4px;
+}
+.input-grid input:focus, #budget:focus,
+.country-select:focus, #tell-us:focus{
+    outline: none;
+}
+.input-grid > .first-name-one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.input-grid> .last-one{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.input-grid > .first-name-two{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.input-grid> .last-two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+#budget{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.country-select{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#budget, .country-select{
+    background-image:
+    linear-gradient(45deg, transparent 50%, black 50%),
+    linear-gradient(135deg, black 50%, transparent 50%);
+  background-position:
+    calc(100% - 15px) calc(1em + 0.5px),
+    calc(100% - 10px) calc(1em + 0.5px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  text-decoration: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+#tell-us{
+    width: 99%;
+    font-family: sans-serif;
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+.check-yes{display: flex;}
+.check-yes> input[type=checkbox]{
+    position: relative;
+    bottom: 17px;
+    right: 4px;
+    width: 30px;
+    margin-right: 10px;
+    border: solid 0.5px lightgray;
+}
+.check-yes-text> h6{margin-top: 10px;}
+.get-started{align-self: center;}
+.get-started-container{text-align: center;}
+.footer-top{ margin-top: 15px;}
+.top-section{list-style: none;}
+.footer-top, .footer-right, .top-row,
+.bottom-row{    display: flex;   }
+.footer-right, .top-row,
+.bottom-row{justify-content: space-between;}
+.footer-right{
+    position: relative;
+    bottom: 15px;
+}
+.footer-right, .top-row, .bottom-row{gap: 50px;}
+.bottom-line{
+    width: 95%;
+    border-bottom: 1px solid rgb(191, 236, 240);
+    margin: 0 auto;
+}
+.footer-logo{height: 20px;}
+.fa-location-arrow, .fa-phone,
+.fa-info-circle, .fa-user-circle{margin-right: 10px;}
+.top-section>li{
+    font-size: 13px;
+}
+.top-section>li>a{text-decoration: none;}
+
+.top-section>li>a:hover,
+.check-yes-text> h6:hover{
+    color:#3F7DE0;
+    cursor: pointer;
+}
+.check-yes-text>p{
+    color: gray;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.top-section>li>h3 {
+    font-weight: bold;
+    font-size: medium;
+}
+.we-hiring{
+    color:aliceblue;
+    background-color: #3F7DE0;
+    border-radius: 5px;
+    padding: 3px;
+    border: none;
+    font-size: 9px;
+}
+.footer-bottom  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;    
+}
+.footer-bottom>.left>h6{
+    display: block;
+    margin: 0;
+}
+.left>h6>a{
+    text-decoration: none;
+    color: inherit;
+
+}
+.left>h6>a:hover{color:#3F7DE0;}
+.footer-bottom>.right{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+}
+.footer-bottom>.right>.fa-icon>.fa{font-size: 10px;}
+.fa-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    text-decoration: none;    
+  }
+  .fa-icon:hover{
+    background-color: rgb(112, 123, 148);
+    color: rgb(191, 236, 240);
+  }
+  .fa-icon:hover .fa{color: rgb(191, 236, 240);}
+  .fa-icon, .footer-bottom>.right>.country-select{
+    height: 19px;
+    border-radius: 3px;
+    background-color: rgb(191, 236, 240);
+    border: none;
+  }
+  
+  .footer-bottom>.right>.country-select{
+    font-size: 12px;
+    width: 130px;
+    line-height: 15px;
+    height: 19px;
+    background-position:
+    calc(100% - 11px) calc(1em - 5px),
+    calc(100% - 6px) calc(1em - 5px),
+    100% 0;
+    margin-top: 15px;
+  }
+.footer-bottom-bottom{text-align: center;}
+.footer-bottom-bottom :first-child,
+.footer-bottom-bottom p:nth-child(2){font-size: 12px;}
+.footer-bottom-bottom p:nth-child(2){
+    margin: 0px 146px;
+    font-size: 12px;
+}
+
+@keyframes google {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-150px, 150px) rotate(720deg);
+      }
+  }
+@keyframes atlassian {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(210px, 130px) rotate(720deg);
+      }
+  }
+@keyframes asana {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-240px, 140px) rotate(720deg);
+      }
+  }
+@keyframes paypal {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-90px, -30px) rotate(720deg);
+      }
+  }
+@keyframes weave {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-35px, -25px) rotate(720deg);
+      }
+  }
+@keyframes google-a {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(0px, -90px) rotate(720deg);
+      }
+  }
+@keyframes calendar {
+    0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(-40px, -100px) rotate(720deg);
+      }
+  }
+
+

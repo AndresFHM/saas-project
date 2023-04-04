@@ -1,0 +1,240 @@
+@media screen and (min-width: 1022px){
+    .navbar> .hamburger-menu{
+        display: none;
+    }   
+
+}
+@media screen and (max-width: 1023px){
+    .navbar-tablet.show {
+        display: flex;
+      }
+    .navbar-mobile{display: none}  
+    .navbar-links{
+        display: none;
+    }
+    .hero-section{flex-direction: column;}
+    .hero-left{
+        text-align: center;
+        margin-right: 0;
+    }
+    .hero-right{
+        padding: 10px;
+    }
+    .benefits{margin: 5px auto;}
+    .benefits-card-container{flex-wrap: wrap;}
+    .benefits-card{
+        width: 45%;
+        display: inline-block;
+        line-height: 1.4;       
+    }
+    .pitch-section{
+        flex-direction: column;
+        height: 600px;
+    }
+    .pitch-left{
+        width: 100%;
+        text-align: center;
+    }
+    .pitch-left {padding: 0;}
+    .pitch-right{
+        height: 100%;
+        width: 100%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .pitch-left, .pitch-right{margin-bottom: 20px;}
+    .christina{
+        flex-direction: column;
+        padding-top: 41px;
+    }
+    .christina-left{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .christina-right{text-align: center;}
+    .christina-right img {padding-top: 0px;}
+    .pricing-features{flex-direction: column;}
+    .price{
+        text-align: center;
+        width:auto;
+        align-items: center;      
+    }
+    .price-header{
+        display: flex;
+        justify-content: center;
+    }
+    .blue-container{flex-direction: column;}
+    .blue-left{
+        display: flex;
+        gap: 30px;
+        padding-bottom: 40px;
+    }
+    .blue-left-left{width: 50%;}
+    .hire-us-container{width: 100%}
+    .hire-us-container>h5{margin-top: 0px;}
+    .hire-us-container>h5>br{ display: none}
+    .hire-us-container>h1{
+        padding-top: 12px;
+        margin-bottom: 6px;
+    }
+    .blue-left-right{margin-top: 31px;}
+    .footer-right{flex-direction: column;}
+
+    @keyframes google {
+        0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(25px, 75px) rotate(720deg);
+          }
+      }
+    @keyframes atlassian {
+        0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(40px, 60px) rotate(720deg);
+          }
+      }
+    @keyframes asana {
+        0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(10px, 70px) rotate(720deg);
+          }
+      }
+    @keyframes paypal {
+        0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(-10px, -30px) rotate(720deg);
+          }
+      }
+    @keyframes weave {
+        0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(-10px, -15px) rotate(720deg);
+          }
+      }
+    @keyframes google-a {
+        0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(0px, -90px) rotate(720deg);
+          }
+      }
+    @keyframes calendar {
+        0% {
+            transform: translate(0, 0);
+          }
+          100% {
+            transform: translate(0px, -100px) rotate(720deg);
+          }
+      }
+
+
+}
+@media screen and (max-width: 790px){
+
+    .navbar-mobile.show {display: flex;}
+    .navbar-tablet{display: none}
+    .navbar img{width: 150px;}
+    .hero-left{margin-top:120px;}
+    .benefits-card-container{width: 100%;}
+    .benefits-card{width: 98%;}
+    .play{
+        height: 300px;
+        background-size: cover;
+    }
+    .christina-left-images{
+        width: 8.4cm;
+        height: 9.6cm;
+    }
+    .line{display: none}
+    .label-box{display: none;}
+    .why-dots>.container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .circle-container{
+        display: flex;
+        align-items: center;
+        gap: 5px;        
+    }
+    .position-lineup{position: relative}
+    .basic-elements{right: 27px}
+    .components{right:34px}
+    .layouts{right: 32px;}
+    .brand-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .world-best{margin: 15px}
+    .blue-left{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .quote-box{padding-right: 0;}
+    .input-grid{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+    .input-grid > .first-name-one{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .input-grid> .last-one{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .input-grid > .first-name-two{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .input-grid> .last-two{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    #budget{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .country-select{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .footer-top, .top-row, 
+    .bottom-row, .footer-right{
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .footer-top, .top-row, 
+    .bottom-row, .footer-right{ text-align: center;}
+    .footer-bottom, .footer-bottom>.right{flex-direction: column;}
+    .footer-fa-icon{
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .footer-bottom > .left{padding: 20px}
+    .footer-fa-icon{margin-top:0px;}
+    .right>.country-select{margin:10px}
+}
+@media screen and (min-width: 790px){
+    .circle-label{display: none}
+}
+
+
+
