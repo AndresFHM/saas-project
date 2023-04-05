@@ -39,7 +39,6 @@ body{
     border: none;
     font-family:  sans-serif;
     font-size: 12px;
-    font-weight: 600;
     height: 50px;
     width: 110px;
     margin-left: 20px;
@@ -77,6 +76,7 @@ body{
     font-family: sans-serif;
     margin: 10px 20px;
     gap: 100px; 
+    justify-content: center;
 }
 .hero-left{
     padding-top: 0px;
@@ -306,7 +306,6 @@ h5 >.sketch{
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
-    /* background-size: contain;  */
     margin: 15px;    
 }
 .play-container{
@@ -318,7 +317,8 @@ h5 >.sketch{
     border: none;
     height: 50px;
     width: 50px;
-    text-align: center;  
+    text-align: center;
+    cursor: pointer;  
 }
 .fa-play{
     position: relative;
@@ -376,34 +376,52 @@ h5 >.sketch{
 }
 .christina-right img{
     padding-top: 60px;
-    width: 60px;
+    width: 124px;
+}
+.christina-right p{
+    line-height: 1.6;
+    font-size: 20px;
 }
 .trusted{padding: 15px;}
 .trusted-header>h1{
     color: gray;
+    margin-bottom: 45px;
 }
 .brand-box{
     display: flex;
     justify-content: space-between;
 }
 .world-best{width: 100px;}
-.pricing{padding: 5px 20px;}
+.pricing{padding: 5px 30px 52px 30px;}
+.pricing-header{line-height: 0.5;}
 .pricing-header, .trusted-header{
     text-align: center;
 }
+.pricing-features{margin-top: 50px;}
 .pricing-features, .price-header{display: flex;}
-.price-header>h1{font-weight:bolder;}
-.price-header> h3{
-    padding-top:6px;
-    color: gray;
+
+.price-header>h1{
+    font-size: 60px;
+    margin: 19px 0 0 0;
+    font-weight: unset;
 }
+.price-header> h3{
+    font-size: 28px;
+    margin-left: 8px;
+    font-weight: unset;
+    color: gray;
+    padding-top: 20px;
+}
+.price-header>h1, .price-header> h3{margin-bottom: 25px;}
 .price{
-    width: 50%;
-    padding: 30px 25px 0 25px;
+    width: 70vw;
+    padding: 32px 32px 50px 32px;
+    height: fit-content;
 }
 .price h5{
     font-size: 10px;
     margin-top: 10px;
+    font-weight: 100;
 }
 .price .play-button{
     height: 40px;
@@ -414,25 +432,33 @@ h5 >.sketch{
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
+    margin-bottom: 32px;
+}
+.price .start-now{
+    font-size: 21px;
+    font-weight: 100;
 }
 .features{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
 }
+.feature-row{ display: flex;}
 .feature{
-    padding: 10px 20px; 
+    padding: 10px 30px; 
     padding-bottom: 0;
     margin-bottom: 0;
+    width: 50%;
 }
-.feature img{width: 25px;}
-.feature h5{margin-top: 10px;}
-
+.feature img{width: 60px;}
+.feature h5{
+    margin-top: 10px;
+    font-size: 16px;
+}
+/* .feature>p{width:80%;} */
 .feature > p,
 .price > p{
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
     color: gray;
     margin-top: 5px;
     line-height: 1.5;
@@ -444,6 +470,7 @@ h5 >.sketch{
     background-size: cover;
     background-color: rgb(19, 45, 100);
     padding: 20px;
+    padding-bottom: 25px;
     margin: 0;
 }
 .blue-container{
@@ -470,6 +497,8 @@ h5 >.sketch{
  .pricing-header h5, .price>hr, .fa-bars, .fa-times{
     color: rgb(112, 123, 148);
 }
+
+.blue-left{padding-top: 100px;}
 .blue-left > .blue-left-right> h3{margin-bottom: 0;}
 .blue-left > .blue-left-right>h6{margin-top: 0;}
 .blue-left >.blue-left-right>.image-box{
@@ -532,6 +561,7 @@ form{
     grid-column: 1/2;
     grid-row: 3/4;
 }
+
 .country-select{
     grid-column: 2/3;
     grid-row: 3/4;
@@ -555,11 +585,13 @@ form{
   appearance: none;
 }
 #tell-us{
-    width: 99%;
+    width: 100%;
     font-family: sans-serif;
     padding: 5px;
     font-weight: bold;
     color: black;
+    box-sizing: border-box;
+
 }
 .check-yes{display: flex;}
 .check-yes> input[type=checkbox]{
@@ -594,9 +626,9 @@ form{
 .fa-info-circle, .fa-user-circle{margin-right: 10px;}
 .top-section>li{
     font-size: 13px;
+    line-height: 1.8;
 }
 .top-section>li>a{text-decoration: none;}
-
 .top-section>li>a:hover,
 .check-yes-text> h6:hover{
     color:#3F7DE0;
@@ -624,12 +656,13 @@ form{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0 20px;    
+    margin-top: 16px;
+    padding: 0 28px;    
 }
 .footer-bottom>.left>h6{
     display: block;
     margin: 0;
+    font-weight:100;
 }
 .left>h6>a{
     text-decoration: none;
@@ -641,14 +674,20 @@ form{
     align-items: center;
     display: flex;
     justify-content: space-between;
-    gap: 12px;
+    gap: 15px;
 }
+.footer-fa-icon{
+    gap:15px;
+    display: flex;
+}
+.footer-fa-icon>a{font-size: 12px;}
+
 .footer-bottom>.right>.fa-icon>.fa{font-size: 10px;}
 .fa-icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 19px;
+    width: 22px;
     text-decoration: none;    
   }
   .fa-icon:hover{
@@ -657,7 +696,7 @@ form{
   }
   .fa-icon:hover .fa{color: rgb(191, 236, 240);}
   .fa-icon, .footer-bottom>.right>.country-select{
-    height: 19px;
+    height: 22px;
     border-radius: 3px;
     background-color: rgb(191, 236, 240);
     border: none;
@@ -667,11 +706,8 @@ form{
     font-size: 12px;
     width: 130px;
     line-height: 15px;
-    height: 19px;
-    background-position:
-    calc(100% - 11px) calc(1em - 5px),
-    calc(100% - 6px) calc(1em - 5px),
-    100% 0;
+    height: 22px;
+    background-position: calc(100% - 12px) calc(1em - 2.31px), calc(100% - 8px) calc(1em - 2.1px), 100% 0;
     margin-top: 15px;
   }
 .footer-bottom-bottom{text-align: center;}
