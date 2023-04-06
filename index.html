@@ -11,21 +11,23 @@
     <link rel="stylesheet" href="https://twemoji.maxcdn.com/v/latest/twemoji.css" />
     <title>Document</title>
 </head>
-<body>  
-    <div class="navbar">
-        <img src="saas-project-assets/project_logo/logo.svg" alt="">
-        <div class="navbar-links">
-            <a href="#home">Home</a>
-            <a href="#features">Features</a>
-            <a href="#learn">Learn</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#hire-us">Hire us</a>
-            <button class="buy-button">Buy Now</button>
+<body>
+    <div class="navbar-wrapper">
+        <div class="navbar">
+            <img src="saas-project-assets/project_logo/logo.svg" alt="">
+            <div class="navbar-links">
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#learn">Learn</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#hire-us">Hire us</a>
+                <button class="buy-button">Buy Now</button>
+            </div>
+            <div class="hamburger-menu">
+                <a href="#"><i class="fa fa-bars"></i></a>
+            </div>
         </div>
-        <div class="hamburger-menu">
-            <a href="#"><i class="fa fa-bars"></i></a>
-        </div>
-    </div>
+    </div>  
     <div class="navbar-tablet">
         <div class="navbar-tablet-links">
             <a href="#home">Home</a>
@@ -114,13 +116,18 @@
         </div>
     </section>
     <section class="pitch-section">
-        <div class="pitch-left">
-            <h1>Front makes you look at things from different perspectives</h1>
-            <div class="pitch-button">
-                <button class="play-button"> <i class="fa fa-play-circle"></i> Play Video </button>
+        <div class="pitch-section-container">               
+
+            <div class="pitch-left">
+                <h1>Front makes you look at things from different perspectives</h1>
+
+                <div class="pitch-button">
+                    <button class="play-button"> <i class="fa fa-play-circle"></i> Play Video </button>
+                </div>
             </div>
-        </div>
-        <div class="pitch-right">
+            <div class="pitch-right">
+                <img src="saas-project-assets/banners/banner_one.jpg" alt="background">
+            </div>
         </div>
     </section>
     <section class="why-section" id="learn">
@@ -157,25 +164,31 @@
         </div>
     </section>
     <section class="play">
-        <div class="play-container">
-            <i class="fa fa-play"></i>
-        </div>
-    </section>
-    <section class="christina">
-        <div class="christina-left">
-            <div class="christina-left-images">
-                <img src="saas-project-assets/abstract/dots.svg" alt="why-dots">
-                <img src="saas-project-assets/people/woman_three.jpg" alt="laughing woman">
+        <div class="play-box">
+            <img src="saas-project-assets/banners/banner_two.jpg" alt="background image">
+            <div class="play-container">
+                <i class="fa fa-play"></i>
             </div>
         </div>
-        <div class="christina-right">
-            <img src="saas-project-assets/company_logos/hubspot.svg" alt="hubspot">
-            <p>The template is really nice and offers quite a large set of options. 
-                It's beautiful and the coding is done quickly and seamlessly. Thank You!</p>
-            <div class="title">
-                <h3>Christina Kray</h3>
-                <h5>Executive Director</h5>
-            </div>    
+
+    </section>
+    <section class="christina">
+        <div class="christina-wrapper">
+            <div class="christina-left">
+                <div class="christina-left-images">
+                    <img src="saas-project-assets/abstract/dots.svg" alt="why-dots">
+                    <img src="saas-project-assets/people/woman_three.jpg" alt="laughing woman">
+                </div>
+            </div>
+            <div class="christina-right">
+                <img src="saas-project-assets/company_logos/hubspot.svg" alt="hubspot">
+                <p>The template is really nice and offers quite a large set of options. 
+                    It's beautiful and the coding is done quickly and seamlessly. Thank You!</p>
+                <div class="title">
+                    <h3>Christina Kray</h3>
+                    <h5>Executive Director</h5>
+                </div>    
+            </div>
         </div>
     </section>
     <section class="trusted">
@@ -237,67 +250,70 @@
         </div>
     </section>
     <section class="blue" id="hire-us">
-        <div class="blue-container">
-            <div class="blue-left">
-                <div class="blue-left-left">
-                    <div class="hire-us-container">
-                        <h1 class="hire-us-color">Hire Us</h1>
-                        <h5 class="sub-text">
-                            Whatever your goal - <br>
-                            we will get you there
-                        </h5>
+        <div class="blue-wrapper">
+            <div class="blue-container">
+                <div class="blue-left">
+                    <div class="blue-left-left">
+                        <div class="hire-us-container">
+                            <h1 class="hire-us-color">Hire Us</h1>
+                            <h5 class="sub-text">
+                                Whatever your goal - <br>
+                                we will get you there
+                            </h5>
+                        </div>
+                        <div class="quote-box">
+                            <i class="hire-us-color">"I love front! I love the ease of use, I love the fact that I have total creative freedom..."</i>
+                        </div> 
                     </div>
-                    <div class="quote-box">
-                        <i class="hire-us-color">"I love front! I love the ease of use, I love the fact that I have total creative freedom..."</i>
-                    </div> 
-                </div>
-                <div class="blue-left-right">
-                    <h3 class="hire-us-color">Charlotte Moore</h3>
-                    <h6 class="sub-text">Head of Commercials, Stack</h6>
-                    <div class="image-box">
-                        <img class="profile-sm"  src="saas-project-assets/people/woman_two.jpg" alt="woman 2">
-                        <img class="profile-sm"  src="saas-project-assets/people/woman_one.jpg" alt="woman 1">
-                        <img class="profile-lg" src="saas-project-assets/people/man_one.jpg" alt="man 1">
-                    </div>
-                </div>
-            </div>
-            <div class="blue-right">
-                <form action="">
-                    <h3>Fill out the form and we'll be in touch as soon as possible</h3>
-                    <div class="input-grid">
-                        <input class="first-name-one" type="text" placeholder="First name"> 
-                        <input class="last-one" type="text" placeholder="Last name">
-                        <input class="first-name-two" type="text" placeholder="First name"> 
-                        <input class="last-two" type="text" placeholder="Last name">
-                        <select name="budget" id="budget">
-                            <option value="null">Budget</option>
-                            <option value="low">Low</option>
-                            <option value="medium">Medium</option>
-                            <option value="high">High</option>
-                        </select>
-                        <select name="country2" id="country2" class="country-select">
-                            <option value="null">Country</option>
-                            <option value="low">Mexico</option>
-                            <option value="medium">United States</option>
-                            <option value="high">Canada</option>
-                        </select>
-                    </div>
-                    <textarea name="tell-us" id="tell-us" placeholder="Tell us more about your project, needs, and timeline, please..." cols="30" rows="8"></textarea><br>
-                    <div class="check-yes">
-                        <input type="checkbox">
-                        <div class="check-yes-text">
-                            <p>Yes, I'd like to receive occasional marketing emails from Front.
-                                I have the right to opt out at any time.
-                            </p>
-                            <h6>View privacy policy</h6>
+                    <div class="blue-left-right">
+                        <h3 class="hire-us-color">Charlotte Moore</h3>
+                        <h6 class="sub-text">Head of Commercials, Stack</h6>
+                        <div class="image-box">
+                            <img class="profile-sm"  src="saas-project-assets/people/woman_two.jpg" alt="woman 2">
+                            <img class="profile-sm"  src="saas-project-assets/people/woman_one.jpg" alt="woman 1">
+                            <img class="profile-lg" src="saas-project-assets/people/man_one.jpg" alt="man 1">
                         </div>
                     </div>
-                    <div class="get-started-container">
-                        <button class="get-started">Get Started</button>
-                    </div>
-                </form>
+                </div>
+                <div class="blue-right">
+                    <form action="">
+                        <h3>Fill out the form and we'll be in touch as soon as possible</h3>
+                        <div class="input-grid">
+                            <input class="first-name-one" type="text" placeholder="First name"> 
+                            <input class="last-one" type="text" placeholder="Last name">
+                            <input class="first-name-two" type="text" placeholder="First name"> 
+                            <input class="last-two" type="text" placeholder="Last name">
+                            <select name="budget" id="budget">
+                                <option value="null">Budget</option>
+                                <option value="low">Low</option>
+                                <option value="medium">Medium</option>
+                                <option value="high">High</option>
+                            </select>
+                            <select name="country2" id="country2" class="country-select">
+                                <option value="null">Country</option>
+                                <option value="low">Mexico</option>
+                                <option value="medium">United States</option>
+                                <option value="high">Canada</option>
+                            </select>
+                        </div>
+                        <textarea name="tell-us" id="tell-us" placeholder="Tell us more about your project, needs, and timeline, please..." cols="30" rows="8"></textarea><br>
+                        <div class="check-yes">
+                            <input type="checkbox">
+                            <div class="check-yes-text">
+                                <p>Yes, I'd like to receive occasional marketing emails from Front.
+                                    I have the right to opt out at any time.
+                                </p>
+                                <h6>View privacy policy</h6>
+                            </div>
+                        </div>
+                        <div class="get-started-container">
+                            <button class="get-started">Get Started</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+
     </section>
     <footer>
         <div class="footer-top">
@@ -387,6 +403,17 @@
             icon.style.animation = 'none';
           });
         }, 3000);
+
+        window.onresize = function(event) {
+          var screenWidth = window.innerWidth;
+          var hiddenElement = document.querySelector('.hamburger-menu');
+
+          if (screenWidth < 1023) {
+            hiddenElement.style.display = 'block';
+          } else {
+            hiddenElement.style.display = 'none';
+          }
+        }        
 
         hamburgerMenu.addEventListener('click', () => {
           if (navbarTablet.classList.contains('show') || navbarMobile.classList.contains('show')) {
